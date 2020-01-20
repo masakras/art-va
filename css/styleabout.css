@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+body {
+  font-family: 'Neucha', cursive;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.nav {
+    margin: 0 0 0 3%;
+    padding: 35px 0;
+    width: 97%;
+    font-size: 2em;
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    font-family: 'Neucha', cursive;
+}
+
+.nav .text { 
+  display: inline-block;
+}
+
+.menu ul.hidden .show {
+  display: block;
+}
+
+.menu {
+  text-align: right;
+  position: relative;
+  z-index: 30;
+  float: right;
+  margin-right: 6.5%;
+  display: block;
+  
+}
+
+.menu svg {
+  width: 43.2px;
+}
+
+.menu ul {
+  display: none;
+  list-style: none;
+  vertical-align: middle;
+  position: absolute;
+  top: 24%;
+  text-align: center;
+  left: -400%;
+}
+
+.menu ul li {
+  background-color: rgba(255,255,255,0.6);
+  border-bottom: 1px solid rgba(176, 0, 0, 0.7);
+  padding: 5px 0 5px 0;
+  border-radius: 2px;
+  width: 100%;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+.menu ul li:hover {
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 1em rgba(176, 0, 0, 0.7);
+}
+
+.menu ul a{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.7em;
+  color: black;
+  line-height: 40px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.7em;
+  color: black;
+}
+
+.lastPoint{
+  width: 50%;
+}
+
+.flag img {
+  width: 30%;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+  background: transparent;
+}
+
+.flag img:hover{
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  background: transparent;
+  box-shadow: 0 0 1em rgba(176, 0, 0, 0.7);
+}
+
+buttons {
+  cursor: pointer;
+  color: #fff;
+}
+
+buttons svg {
+  background: rgba(255,255,255,0.6);
+  transition-property: box-shadow, background;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+buttons svg:hover,
+buttons svg:active {
+  transition-property: box-shadow, background;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  background: rgba(255,255,255,0.4);
+  box-shadow: 0 0 1em rgba(176, 0, 0, 0.7);
+  
+}
+
+line {
+  stroke: #000000;
+  stroke-width: 0.1em;
+}
+
+.container {
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  border-right: solid 1px rgb(176,0,0);
+}
+
+.image img {
+	width: 40vw;
+	margin-left: 5vw;
+	padding-right: 5vw;
+ }
+
+.nowrap{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.share {
+  display: inline-flex;
+  align-self: center;
+}
+
+.share  img{
+	transition-property: box-shadow;
+  	transition-duration: 0.5s;
+  	transition-delay: 0.1s;
+  	border-radius: 50%;
+	width: 40px;
+	margin-right: 7px;
+}
+
+.share  img:hover{
+	transition-property: box-shadow;
+  	transition-duration: 0.5s;
+  	transition-delay: 0s;
+  	box-shadow: 0 0 1em rgba(176, 0, 0, 0.7);
+  	background: transparent;
+}
+
+#Lastname {
+    font-size: 0;
+    z-index: 100;
+    align-self: flex-start;
+    padding-left: 50px;
+}
+
+#Lastname img{
+    position:relative;
+    display:inline-block;
+    opacity:0;
+    width:15%;
+}
+@keyframes Lastnameseq {  100% { opacity: 1; } }
+#Lastname img { animation: Lastnameseq 5.0s forwards; }
+
+/*v*/
+#Lastname img:nth-child(1) {
+    animation-delay: 0.1s;
+
+}
+
+/*a*/
+#Lastname img:nth-child(2) {
+    animation-delay: 0.3s;
+    margin-left: -7.5%;
+}
+
+/*s*/
+#Lastname img:nth-child(3) {
+    animation-delay: 0.5s;
+    margin-left: -9.0%;
+}
+
+/*i*/
+#Lastname img:nth-child(4) {
+    animation-delay: 0.7s;
+    margin-left: -7.5%;
+}
+
+/*l*/
+#Lastname img:nth-child(5) {
+    animation-delay: 0.9s;
+    margin-left: -9.5%;
+}
+
+/*e*/
+#Lastname img:nth-child(6) {
+    animation-delay: 1.1s;
+    margin-left: -10.6%;
+}
+
+/*v*/
+#Lastname img:nth-child(7) {
+    animation-delay: 1.3s;
+    margin-left: -6.0%;
+}
+
+/*i*/
+#Lastname img:nth-child(8) {
+    animation-delay: 1.5s;
+    margin-left: -8.5%;
+}
+
+/*c*/
+#Lastname img:nth-child(9) {
+    animation-delay: 1.7s;
+    margin-left: -10.0%;
+}
+
+/*h*/
+#Lastname img:nth-child(10) {
+    animation-delay: 1.9s;
+    margin-left: -8.0%;
+}
+
+/*-*/
+#Lastname img:nth-child(11) {
+    animation-delay: 3.0s;
+    margin-left: -3.5%;
+}
+
+.contact {
+  font-size: 1.3em;
+  color: white;
+  align-self: flex-end;
+  margin-left: 30px;
+}
+
+.info {
+	color: white;
+	font-size: 1.3em;
+	margin: 0 auto;
+	padding-top: 70px;
+	width: 90%;
+}
+
+.info2 {
+	color: white;
+	font-size: 1.3em;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.examples {
+	  width: 100%;	  
+	  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  
+	  -webkit-flex-flow: row wrap;
+	  flex-flow: row wrap;
+	  margin: 30px 0;
+	  justify-content: space-around;
+}
+
+.examples .work img{
+	width: 320px;
+}
+
+
+@media screen and (max-width: 550px) {
+  .nowrap {
+	flex-wrap: wrap;
+  }
+  .image {
+    border-right: none;
+    padding: 0;
+  	margin: 0 auto;
+  }
+  .image img {
+	padding: 0;
+	margin: 0;
+	width: 60vw;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .info, .info2 {
+  	width: 75%;
+   }
+   .examples .work img{
+	width: 300px;
+}
+}

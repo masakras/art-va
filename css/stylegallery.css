@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+body { 
+  font-family: 'Neucha', cursive;
+  overflow-x: hidden; 
+  background-color: black;
+}
+
+.background .back {
+  position: fixed;
+  width: 100%;
+}
+
+.nav {
+  color: white;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  font-family: 'Neucha', cursive;
+  float: left;
+  margin: 0 0 0 3%;
+  padding: 35px 0;
+  width: 100%;
+  font-size: 2em;
+}
+
+.nav .text {
+ 
+  display: inline-block;
+}
+
+.menu ul.hidden .show {
+  display: block;
+}
+
+.menu {
+  text-align: right;
+  position: relative;
+  z-index: 30;
+  float: right;
+  margin-right: 6.5%;
+  display: block;
+  
+}
+
+.menu svg {
+  width: 43.2px;
+}
+
+.menu ul {
+  display: none;
+  list-style: none;
+  vertical-align: middle;
+  position: absolute;
+  top: 24%;
+  text-align: center;
+  left: -400%;
+}
+
+.menu ul li {
+  background-color: rgba(255,255,255,0.6);
+  border-bottom: 1px solid rgba(176, 0, 0, 0.7);
+  padding: 5px 0 5px 0;
+  border-radius: 2px;
+  width: 100%;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+.menu ul li:hover {
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 1em rgba(176, 0, 0, 0.7);
+}
+
+.menu ul a{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.7em;
+  color: black;
+  line-height: 40px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.7em;
+  color: black;
+}
+ 
+.lastPoint{
+  width: 50%;
+}
+
+.flag img {
+  width: 30%;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+  background: transparent;
+}
+
+.flag img:hover{
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  background: transparent;
+  box-shadow: 0 0 1em rgba(176, 0, 0, 0.7);
+}
+
+buttons {
+  cursor: pointer;
+  color: #fff;
+}
+
+buttons svg {
+  background: rgba(255,255,255,0.6);
+  transition-property: box-shadow, background;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+buttons svg:hover,
+buttons svg:active {
+  transition-property: box-shadow, background;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  background: rgba(255,255,255,0.4);
+  box-shadow: 0 0 1em rgba(176, 0, 0, 0.7);
+  
+}
+
+line {
+  stroke: #000000;
+  stroke-width: 0.1em;
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+  padding-top: 110px;
+}
+
+.flex-container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: absolute;
+}
+
+.flex-item {
+  font-weight: bold;
+  text-align: center;
+  height: 200px;
+  margin: 5px;
+  width: 300px;
+  color: white;
+  box-shadow: 1px 1px 5px #000000;
+ }
+
+.flex-container2 {
+  width: 100%;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.flex-item2 {
+  font-weight: bold;
+  text-align: center;
+  height: 200px;
+  width: 300px;
+  color: white;
+  position: relative;
+  margin: 5px;
+  box-shadow: 1px 1px 5px #000000;
+}
+
+.mask {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+}
+
+.mask h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(176, 0, 0, 0.7);
+    margin: 20px 40px 0px 40px;
+    cursor: default;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.mask a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+
+.mask:hover {
+    opacity: 1; 
+}
+
+.mask a.info:hover {
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    box-shadow: 0 0 5px rgba(176, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 325px) {
+  .flex-item2 {
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 770px) and (min-height: 1050px), (min-width: 1050px) and (min-height: 770px) {
+  .container {
+    padding-top: 25vh;
+  }
+}
